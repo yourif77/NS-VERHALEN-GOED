@@ -1,0 +1,489 @@
+/*csslint order-alphabetical: false, box-model: false, outline-none: false, universal-selector:false, box-sizing:false, ids:false, qualified-headings:false, unique-headings:false, fallback-colors:false, */
+body {
+    margin:                           auto;
+    background-color:                 #e7e6e8;
+    font-family:                      sans-serif; /* NS sans regular; */
+    font-weight:                      lighter;
+}
+
+section {
+    margin-top:                       1em;
+    color:                            #242856;
+    display:                          flex;
+    flex-direction:                   row;
+    flex-wrap:                        wrap;
+    justify-content:                  center;
+    background-color:                 #e7e6e8;
+    border-bottom:                    1.5em solid #FFFFFF;
+}
+
+/*---------------Header---------------*/
+header {
+    position:                         fixed;
+    background-color:                 white;
+    height:                           4.5em;
+    color:                            #2F3B62;
+    top:                              0;
+    width:                            100%;
+    z-index:                          100;
+}
+
+.NS-LOGO {
+    width:                            4em;
+    margin-left:                      0.5em;
+    margin-top:                       1.7em;
+}
+
+h1 {
+    
+    float:                            right;
+    font-weight:                      lighter;
+    margin-right:                     0.5em;
+}
+
+/*---------------NAV---------------*/
+nav {
+    width:                           100%;
+    top:                             4.5em;
+    height:                          3.5em;
+    background-color:                #242856;
+    z-index:                         100;
+    position:                        fixed;
+}
+
+nav ul {
+    margin-right:                    1em;
+    display:                         flex;
+    flex-direction:                  row;
+    justify-content:                 flex-end;
+    list-style-type:                 none;
+}
+
+nav ul li a {
+    font-family:                     sans-serif;
+    font-weight:                     lighter;
+    color:                           white;
+}
+
+A:link {
+    text-decoration:                 none;
+    font-size:                       0.9em;
+    margin:                          .4em;
+}
+
+A:visited {
+text-decoration:                     none;
+color:                               white;
+font-size:                           16em;
+}
+
+A:hover {
+    color:                           #E7E6E8;
+}
+
+/*---------------NAV---------------*/
+#searchfield{
+    width:                           100%;
+    top:                             4.5em;
+    height:                          3.5em;
+    background-color:                #242856;
+    z-index:                         100;
+    position:                        fixed;
+}
+
+.search {
+    width:                           0;
+    height:                          2em;
+    margin:                          0.5em 0.2em 0 0 ;
+    border:                          solid #242856;
+    font-size:                       1em;
+    color:                           #242856;
+    background-color:                #242856;
+    transition:                      0.4s ease-in-out;
+    background-image:                url(../image/searchicon.png);
+    background-position:             0.4em 0.2em;
+    background-repeat:               no-repeat;
+    cursor:                          pointer;
+    float: right;
+}
+
+.search:focus {
+    width:                             30%;
+    background-color:                  white;
+    background-image:                  url(../image/searchicon2.png);
+    background-position:               0.4em 0.2em;
+    background-repeat:                 no-repeat;
+}
+
+.search {
+    padding-left:                      3em;
+}
+
+/*---------------First-Image---------------*/
+.hoofdafbeelding {
+    height:                          21em;
+    width:                           100%;
+    background-image:                url(../image/Lezen2.jpg);
+    background-position:             bottom;
+    background-size:                 cover;
+    margin-top:                      8em;
+    border:                          none;
+}
+
+.delete {
+    display: none;
+}
+
+/*---------------Spoiler---------------*/
+.spoiler {
+    background-color:                rgba(36, 40, 86, 0.7);
+    width:                           58%;
+    height:                          60%;
+    margin-left:                     -34%;
+    margin-top:                      3em;
+}
+
+.slogan{
+    
+    color:                           white;
+    margin-left:                     0.75em;
+    font-size:                       1.5em;
+    font-weight:                     lighter;
+}
+
+.slogantekst {
+    color:                           white;
+    margin-top:                      -1.5em;
+    margin-left:                     1em;
+    width:                           90%;
+}
+
+.random-button {
+    width:                            15em;
+    height:                           20%;
+    background-color:                 white;
+    color:                            #242856;
+    text-decoration:                  none;
+    font-size:                        0.8em;
+    font-weight:                      lighter;
+    font-family:                      sans-serif;
+    cursor:                           pointer;
+    border-style:                     none;
+    margin-left:                      1.5em;
+    transition-duration:              0.3s;
+}
+
+.random-button:hover{
+    background-color:                 #E7E6E8;
+    color:                            #242856;
+    border-color:                     #E7E6E8;
+}
+
+/*---------------Filter---------------*/
+#filter{
+    width:                            20em;
+    transition:                       0.4s;
+    height:                           15em;
+    padding-top:                      0.5em;
+    padding-bottom:                   0.5em;
+    background-color:                 #FAC637;
+    display:                          block;
+    margin:                           -4em auto 3em auto;
+}
+
+#filter:hover{
+     width:                            23em;
+     height:                           16em;
+     transition:                       0.4s;    
+}
+
+h2 {
+    margin-left:                      0.6em;
+    color:                            #242856;
+    margin-top:                       auto;
+    font-weight:                      lighter;
+    width:                            100%;
+}
+
+select{
+    margin:                           auto;
+    width:                            90%;
+    height:                           3em;
+    display:                          flex;
+    margin-top:                       1em;
+    margin-bottom:                    1em;
+}
+
+.ButtonFilter {
+    width:                            15em;
+    display:                          block;
+    background-color:                 #242856;
+    color:                            #FAC637;
+    padding:                          1em 2em;
+    text-decoration:                  none;
+    font-size:                        0.6em;
+    font-weight:                      lighter;
+    cursor:                           pointer;
+    margin:                           3em auto 1em auto;
+    transition-duration:              0.3s;
+    border-style:                     none;
+    border-color:                     #FAC637;
+    border:                           solid 1px;
+}
+
+.ButtonFilter:hover{
+    background-color:                 #FAC637;
+    color:                            #242856;
+    border-color:                     #FAC637;
+    border:                           solid 1px;
+}
+
+/*---------------Article---------------*/
+.story {
+    width:                            23em;
+    height:                           12em;
+    padding:                          0.5em;
+    background-color:                 #FFFFFF;
+    margin:                           1em 1em 1em 1em;
+}
+
+.story h3 {
+    margin-left:                     0.5em;
+    color:                            #242856;
+    width:                            90%;
+    margin-bottom:                    0;
+    font-weight:                      lighter;
+    font-size:                        1.4em;
+}
+
+.story p {
+    margin-left:                      0.75em;
+    height:                           4em
+}
+
+.bluebutton{
+    width:                            13em;
+    background-color:                 #242856;
+    color:                            #E7E6E8;
+    padding:                          1em 2em;
+    text-decoration:                  none;
+    font-weight:                      lighter;
+    cursor:                           pointer;
+    border-style:                     none;
+    border-color:                     #FAC637;
+    border:                           solid 1px;
+    margin-left:                      0.75em;
+    transition-duration:              0.3s;
+}
+
+.bluebutton:hover{
+    background-color:                 #E7E6E8;
+    color:                            #242856;
+    border-color:                     #E7E6E8;
+    border:                           solid 1px;
+}
+
+.ster {
+    position:                         absolute;
+    width:                            2em;
+    height:                           auto;
+    margin-left:                      10.5em;
+    cursor:                           copy;
+}
+
+.story-delete {
+    width:                            23em;
+    height:                           12em;
+    padding:                          0.5em;
+    background-color:                 #FFFFFF;
+    margin:                           1em 1em 1em 1em;
+}
+
+.story-delete h3 {
+    margin-left:                      0.5em;
+    color:                            #242856;
+    width:                            90%;
+    margin-bottom:                    0;
+    font-weight:                      lighter;
+    font-size:                        1.4em;
+}
+
+.story-delete p {
+    margin-left:                      0.75em;
+    height:                           4em
+}
+
+.weg{
+    border: none;
+}
+
+/*---------------Mediaquries---------------*/
+@media (max-width: 50em) {
+    .tablet{
+        display:                      none;
+    }
+    .desktop{
+        display:                      none;
+    }
+}
+
+@media (min-width: 50.1em){
+    .mobile{
+        display:                      none;
+    }
+}
+
+@media (max-width: 72.1em) {
+
+    .desktop{
+        display:                      none;
+    }
+}
+@media (min-width: 72em){
+    
+    .tablet{
+        display:                      none;
+    }
+}
+
+@media (max-width: 52.1em) {
+    footer p {
+        display:                      flex;
+        flex-direction:               column;
+        align-items:                  baseline;
+        flex-wrap:                    wrap;
+        align-content:                flex-start;
+        width:                        20em;
+    
+    }
+}
+    @media (min-width: 78em){
+    .spoiler {
+        width:                       50em;
+        margin-left:                 -26.5em;
+    }
+    .story-delete {
+        display:                     none;
+    }
+}
+
+/*---------------Footer---------------*/
+footer {
+    display:                         flex;
+    flex-direction:                  row;
+    justify-content:                 flex-start;
+    align-items:                     baseline;
+    flex-wrap:                       wrap;
+    align-content:                   flex-start;
+    font-size:                       0.7em;
+    background-color:                white;
+    color:                           #E7E6E8;
+    margin-top:                      -1.5em;
+}
+
+footer p {
+    font-family:                     sans-serif;
+    color:                           #6A6A7A;
+    font-size:                       1.5em;
+    margin-left:                     1em;
+}
+
+footer p:hover{
+    color:                           #242856;
+    cursor:                          pointer;
+    font-size:                       1.6em;
+    transition:                      0.1s;
+    font-weight: bold;
+}
+
+/*---------------Forum---------------*/
+form {
+    margin-left:                     auto;
+    margin-right:                    auto;
+    margin-top:                      120px;
+    width:                           18em;
+    font-size:                       1em;
+    background-color:                #E7E6E8;
+}
+
+input {
+    margin-top:                      1em;
+    margin-bottom:                   3em;
+    border:                          solid #242856;
+    height:                          3em;
+    padding-left:                    1em;
+    width:                           20em;
+}
+    
+input[id="naam"]:valid,
+input[id="email"]:valid,
+input[id="ww"]:valid,    
+input[id="hww"]:valid {
+    background:                      rgba(127,255,0,.1)
+}
+    
+input[id="naam"]:invalid,
+input[id="email"]:invalid,
+input[id="ww"]:invalid,    
+input[id="hww"]:invalid {
+    background:                      rgba(255,0,0,.1)
+}  
+    
+input[id="naam"]:focus,
+input[id="email"]:focus,
+input[id="ww"]:focus,    
+input[id="hww"]:focus {
+    background: white;
+}
+
+fieldset {
+    border:                           none;
+    margin-left:                      auto;
+    margin-right:                     auto;
+}
+
+legend {
+    display:                          none;
+}
+
+label {
+    color:                            #242856;
+}
+
+.button {
+    width:                            15em;
+    background-color:                 #242856;
+    border:                           .2em solid #242856;
+    color:                            white;
+    cursor:                           pointer;
+    font-size:                        1em;
+    transition-duration:              0.3s;
+    transition-duration:              0.2s;
+    text-decoration:                  none;
+    font-weight:                      lighter;
+}
+
+.button:hover {
+    background-color:                 #E7E6E8;
+    color:                            #242856;
+    border:                           .2em solid #242856;
+}
+
+/*---------------VERHALEN---------------*/
+.mobile{
+    width:                             100%;
+    height:                            auto;
+    margin-top:                        7.9em;
+}
+
+.tablet{
+    width:                             100%;
+    height:                            auto;
+    margin-top:                        7.9em;
+}
+
+.desktop{
+    width:                             100%;
+    height:                            auto;
+    margin-top:                        7.9em;
+}
